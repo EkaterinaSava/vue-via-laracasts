@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue.js via Laracasts</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+  <main class="primary__container">
+
+    <h1 class="primary__heading">Vue.js по скринкасту Laracasts</h1>
+
+    <hr class="demo__hr">
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div id="root" class="demo">
+      <input type="text" id="input" v-model="message" class="demo__input">
+      <div class="demo__invisible-separator"></div>
+      <p class="demo__paragraph">The value of the input is: <span class="demo__data">{{ message }}<span></p>
+    </div>
+
+    <hr class="demo__hr">
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  </main>
+
+
+  <script src="https://unpkg.com/vue@2.5.6/dist/vue.js"></script>
+
+  <script>
+    new Vue({
+      el: '#root',
+
+      data: {
+        message: "Hello, world!"
+      }
+    })
+  </script>
+
+</body>
+</html>
