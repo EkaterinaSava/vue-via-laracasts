@@ -4,13 +4,11 @@
 
 :octocat:
 
-Одно видео - один коммит
-
 :white_check_mark: 01 — Basic Data Binding
 
 :white_check_mark: 02 — Setup Vue Devtools
 
-03 — Lists
+:white_check_mark: 03 — Lists
 
 04 — Vue Event Listeners
 
@@ -23,9 +21,9 @@
 08 — Components Within Components
 
 09 — Practical Component Exercise #1: Message
- 
+
 10 — Practical Component Exercise #2: Modal
-     
+
 11 — Practical Component Exercise #3: Tabs
 
 12 — Component Communication Example #1: Custom Events
