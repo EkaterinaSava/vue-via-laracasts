@@ -21,10 +21,20 @@
     <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <div id="root" class="demo">
+    <div id="root-1" class="demo">
+      <h4 class="demo__heading">Step 01 — Basic Data Binding</h4>
       <input type="text" id="input" v-model="message" class="demo__input">
       <div class="demo__invisible-separator"></div>
-      <p class="demo__paragraph">The value of the input is: <span class="demo__data">{{ message }}<span></p>
+      <p class="demo__paragraph">The value of the input is: <span class="demo__data">{{ message }}</span></p>
+    </div>
+
+    <hr class="demo__hr">
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div id="root-2" class="demo">
+
     </div>
 
     <hr class="demo__hr">
@@ -36,16 +46,7 @@
 
 
   <script src="https://unpkg.com/vue@2.5.6/dist/vue.js"></script>
-
-  <script>
-    new Vue({
-      el: '#root',
-
-      data: {
-        message: "Hello, world!"
-      }
-    })
-  </script>
+  <script src="main.js"></script>
 
 </body>
 </html>
