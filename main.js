@@ -16,6 +16,20 @@ var vm2 = new Vue({
   el: '#root-2',
 
   data: {
-    
+    names: ['Kate', 'Ann', 'Rita', 'Janett']
+  },
+
+  mounted() {
+    document.querySelector('#root-2-btn').addEventListener('click', () => {
+      let newName = document.querySelector('#root-2-input');
+      vm2.names.push(newName.value);
+      newName.value = '';
+    });
   }
 });
+
+vm2.names.push('Susan');
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Step 03 — Lists */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */

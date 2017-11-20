@@ -24,7 +24,9 @@
     <div id="root-1" class="demo">
       <h4 class="demo__heading">Step 01 — Basic Data Binding</h4>
       <input type="text" id="input" v-model="message" class="demo__input">
+
       <div class="demo__invisible-separator"></div>
+
       <p class="demo__paragraph">The value of the input is: <span class="demo__data">{{ message }}</span></p>
     </div>
 
@@ -34,7 +36,15 @@
     <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <div id="root-2" class="demo">
+      <h4 class="demo__heading">Step 03 — Lists</h4>
+      <ul>
+        <li v-for="name in names" v-text="name"></li>
+      </ul>
 
+      <div class="demo__invisible-separator"></div>
+
+      <input type="text" class="demo__input" id="root-2-input">
+      <button class="demo__btn" id="root-2-btn">Add new name in List</button>
     </div>
 
     <hr class="demo__hr">
