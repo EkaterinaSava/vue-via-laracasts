@@ -12,7 +12,7 @@ var vm1 = new Vue({
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Step 03 — Lists */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-var vm2 = new Vue({
+var vm3 = new Vue({
   el: '#root-3',
 
   data: {
@@ -20,16 +20,31 @@ var vm2 = new Vue({
   },
 
   mounted() {
-    document.querySelector('#root-2-btn').addEventListener('click', () => {
-      let newName = document.querySelector('#root-2-input');
+    document.querySelector('#root-3-btn').addEventListener('click', () => {
+      let newName = document.querySelector('#root-3-input');
       vm2.names.push(newName.value);
       newName.value = '';
     });
   }
 });
 
-vm2.names.push('Susan');
+vm3.names.push('Susan');
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Step 03 — Lists */
+/* Step 04 — Vue Event Listeners */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+var vm4 = new Vue({
+  el: '#root-4',
+
+  data: {
+    newName: '',
+    names: ['Karen', 'Mary', 'Angela', 'Janna']
+  },
+
+  methods: {
+    addName: function() {
+      this.names.push(this.newName);
+      this.newName = '';
+    }
+  }
+});

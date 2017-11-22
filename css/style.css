@@ -115,6 +115,11 @@ h6 {
 .demo__text-row {
   margin: 5px 0;
 }
+.demo__small-text {
+  font-size: 12px;
+  color: #CD88AF;
+  padding-top: 5px;
+}
 .demo__data {
   color: #882D60;
   margin-left: 10px;

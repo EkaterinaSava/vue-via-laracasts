@@ -10,7 +10,7 @@
 
 :white_check_mark: 03 — Lists
 
-04 — Vue Event Listeners
+:white_check_mark: 04 — Vue Event Listeners
 
 05 — Attribute and Class Binding
 
