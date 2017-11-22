@@ -14,9 +14,9 @@
 
 :white_check_mark: 05 — Attribute and Class Binding
 
-06 — The Need for Computed Properties
+:white_check_mark: 06 — The Need for Computed Properties
 
-07 — Components 101
+:white_check_mark: 07 — Components 101
 
 08 — Components Within Components
 

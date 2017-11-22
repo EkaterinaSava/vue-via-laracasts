@@ -47,7 +47,7 @@
 
     <div id="root-3" class="demo">
       <h4 class="demo__heading">Step 03 — Lists</h4>
-      <ul>
+      <ul class="demo__ul">
         <li v-for="name in names" v-text="name"></li>
       </ul>
 
@@ -67,7 +67,7 @@
 
     <div id="root-4" class="demo">
       <h4 class="demo__heading">Step 04 — Vue Event Listeners</h4>
-      <ul>
+      <ul class="demo__ul">
         <li v-for="name in names" v-text="name"></li>
       </ul>
 
@@ -118,10 +118,26 @@
         </ul>
 
         <h6 class="demo__subheading">Incomplete Tasks</h6>
-        <ul>
+        <ul class="demo__ul">
           <li v-for="task in incompleteTasks" v-text="task.description"></li>
         </ul>
       </div>
+    </div>
+
+    <hr class="demo__hr">
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+
+    <div id="root-7" class="demo">
+      <h4 class="demo__heading">Step 07 — Components 101</h4>
+
+      <ul class="demo__ul">
+        <task>Go to the store</task>
+        <task>Go to the bank</task>
+        <task>Go to work</task>
+      </ul>
+
     </div>
 
     <hr class="demo__hr">
