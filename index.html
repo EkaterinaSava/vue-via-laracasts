@@ -85,6 +85,21 @@
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
 
+    <div id="root-5" class="demo">
+      <h4 class="demo__heading">05 — Attribute and Class Binding</h4>
+
+      <button class="demo__btn" :title="title">Hover over Me and U will see the Title</button>
+      
+      <div class="demo__invisible-separator"></div>
+
+      <button class="demo__btn" :class="{ 'is-loading' : isLoading }" @click="toggleClass">Click on Me and I will be 'loaded' (just get a class)</button>
+    </div>
+
+    <hr class="demo__hr">
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+
   </main>
 
 

@@ -12,7 +12,7 @@
 
 :white_check_mark: 04 — Vue Event Listeners
 
-05 — Attribute and Class Binding
+:white_check_mark: 05 — Attribute and Class Binding
 
 06 — The Need for Computed Properties
 

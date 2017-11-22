@@ -48,3 +48,21 @@ var vm4 = new Vue({
     }
   }
 });
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* 05 — Attribute and Class Binding */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+var vm5 = new Vue({
+  el: '#root-5',
+
+  data: {
+    title: 'Now the title is beingset through JavaScript',
+    isLoading: false
+  },
+
+  methods: {
+    toggleClass() {
+      this.isLoading = true;
+    }
+  }
+})
