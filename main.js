@@ -13,7 +13,7 @@ var vm1 = new Vue({
 /* Step 03 — Lists */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 var vm2 = new Vue({
-  el: '#root-2',
+  el: '#root-3',
 
   data: {
     names: ['Kate', 'Ann', 'Rita', 'Janett']
