@@ -86,13 +86,42 @@
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
 
     <div id="root-5" class="demo">
-      <h4 class="demo__heading">05 — Attribute and Class Binding</h4>
+      <h4 class="demo__heading">Step 05 — Attribute and Class Binding</h4>
 
       <button class="demo__btn" :title="title">Hover over Me and U will see the Title</button>
-      
+
       <div class="demo__invisible-separator"></div>
 
       <button class="demo__btn" :class="{ 'is-loading' : isLoading }" @click="toggleClass">Click on Me and I will be 'loaded' (just get a class)</button>
+    </div>
+
+    <hr class="demo__hr">
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+
+    <div class="demo">
+      <h4 class="demo__heading">Step 06 — The Need for Computed Properties</h4>
+
+      <div id="root-6-1" class="demo">
+        <p class="demo__paragraph">
+          <span class="demo__data">{{ reversedMessage }}</span>
+        </p>
+      </div>
+
+      <hr class="demo__small-hr">
+
+      <div id="root-6-2" class="demo">
+        <h6 class="demo__subheading">All Tasks</h6>
+        <ul>
+          <li v-for="task in tasks" v-text="task.description"></li>
+        </ul>
+
+        <h6 class="demo__subheading">Incomplete Tasks</h6>
+        <ul>
+          <li v-for="task in incompleteTasks" v-text="task.description"></li>
+        </ul>
+      </div>
     </div>
 
     <hr class="demo__hr">
