@@ -20,7 +20,7 @@
 
 :white_check_mark: 08 — Components Within Components
 
-09 — Practical Component Exercise #1: Message
+:white_check_mark: 09 — Practical Component Exercise #1: Message
 
 10 — Practical Component Exercise #2: Modal
 
