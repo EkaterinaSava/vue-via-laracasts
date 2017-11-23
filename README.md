@@ -22,7 +22,7 @@
 
 :white_check_mark: 09 — Practical Component Exercise #1: Message
 
-10 — Practical Component Exercise #2: Modal
+:white_check_mark: 10 — Practical Component Exercise #2: Modal
 
 11 — Practical Component Exercise #3: Tabs
 

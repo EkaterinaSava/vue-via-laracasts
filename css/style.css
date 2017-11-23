@@ -149,7 +149,7 @@ h6 {
 }
 .demo__ul {
   list-style: circle;
-  margin-top: 5px;
+  margin: 10px 0;
 }
 .demo .is-loading {
   background-color: #3D1255;

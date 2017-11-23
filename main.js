@@ -148,7 +148,6 @@ var vm8 = new Vue({
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Step 09 — Practical Component Exercise #1: Message */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 Vue.component('message', {
   props: ['title', 'body'],
 
@@ -174,10 +173,29 @@ var vm9 = new Vue({
 })
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
+/* Step 10 — Practical Component Exercise #2: Modal */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+Vue.component('modal', {
+  template: `
+    <div class="modal is-active">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <slot></slot>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close" @click="$emit('close')"></button>
+    </div>
+  `
+});
 
+var vm10 = new Vue({
+  el: '#root-10',
 
+  data: {
+    showModal: false
+  }
+})
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*  */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */

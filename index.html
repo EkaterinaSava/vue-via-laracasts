@@ -114,7 +114,7 @@
 
       <div id="root-6-2" class="demo">
         <h6 class="demo__subheading">All Tasks</h6>
-        <ul>
+        <ul class="demo__ul">
           <li v-for="task in tasks" v-text="task.description"></li>
         </ul>
 
@@ -172,6 +172,22 @@
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+
+    <div id="root-10" class="demo">
+      <h4 class="demo__heading">Step 10 — Practical Component Exercise #2: Modal</h4>
+
+      <modal v-show="showModal" @close="showModal = false">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi eveniet quaerat assumenda, in cumque expedita, adipisci culpa, aspernatur repellat officiis provident ipsum facere fuga unde cum eos pariatur enim nisi!</p>
+      </modal>
+      <button class="button is-dark" @click="showModal = true">Show Modal</button>
+    </div>
+
+    <hr class="demo__hr">
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+
+
 
   </main>
 
