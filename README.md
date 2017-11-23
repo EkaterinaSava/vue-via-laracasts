@@ -18,7 +18,7 @@
 
 :white_check_mark: 07 — Components 101
 
-08 — Components Within Components
+:white_check_mark: 08 — Components Within Components
 
 09 — Practical Component Exercise #1: Message
 

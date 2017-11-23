@@ -118,10 +118,32 @@ var vm7 = new Vue({
 })
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* 05 — Attribute and Class Binding */
+/* Step 08 — Components Within Components */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+Vue.component('task-list', {
+  template: `
+    <ul class="demo__ul">
+      <task v-for="task in tasks" :key="task.id">{{ task.name }}</task>
+    </ul>
+  `,
 
+  data() {
+    return {
+      tasks: [
+        { name: 'Go to the store', completed: true },
+        { name: 'Finish screencast', completed: false },
+        { name: 'Make donation', completed: false },
+        { name: 'Clear inbox', completed: true },
+        { name: 'Make dinner', completed: false },
+        { name: 'Learn Vue', completed: false }
+      ]
+    }
+  }
+});
 
+var vm7 = new Vue({
+  el: '#root-8'
+})
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* 05 — Attribute and Class Binding */
