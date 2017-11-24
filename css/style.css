@@ -151,6 +151,12 @@ h6 {
   list-style: circle;
   margin: 10px 0;
 }
+.demo__tabs {
+  width: 65%;
+  background-color: white;
+  padding: 15px;
+  margin-top: 10px;
+}
 .demo .is-loading {
   background-color: #3D1255;
   color: white;

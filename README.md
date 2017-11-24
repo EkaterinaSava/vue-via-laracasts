@@ -24,7 +24,7 @@
 
 :white_check_mark: 10 — Practical Component Exercise #2: Modal
 
-11 — Practical Component Exercise #3: Tabs
+:white_check_mark: 11 — Practical Component Exercise #3: Tabs
 
 12 — Component Communication Example #1: Custom Events
 
