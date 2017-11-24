@@ -26,7 +26,7 @@
 
 :white_check_mark: 11 — Practical Component Exercise #3: Tabs
 
-12 — Component Communication Example #1: Custom Events
+:white_check_mark: 12 — Component Communication Example #1: Custom Events
 
 13 — Component Communication Example #2: Event Dispatcher
 

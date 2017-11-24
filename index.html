@@ -213,6 +213,24 @@
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
 
+    <div id="root-12" class="demo">
+      <h4 class="demo__heading">Step 12 — Component Communication Example #1: Custom Events</h4>
+
+      <p class="demo__paragraph">
+        Enter your Coupon Code and Press «Enter»&nbsp;
+        <coupon @applied="onCouponApplied"></coupon>
+      <p>
+      <div class="demo__invisible-separator"></div>
+
+      <p class="demo__paragraph" v-if="couponApplied"><strong>Coupon was applied!</strong></p>
+
+    </div>
+
+    <hr class="demo__hr">
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
+
   </main>
 
 
