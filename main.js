@@ -299,9 +299,43 @@ var vm12 = new Vue({
 });
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
+/* Step 13 — Component Communication Example #2: Event Dispatcher */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+window.Event = new class {
+  constructor() {
+    this.vue = new Vue();
+  }
 
+  fire(event, data = null) {
+    this.vue.$emit(event, data);
+  }
+
+  listen(event, callback) {
+    this.vue.$on(event, callback);
+  }
+}
+
+Vue.component('promocode', {
+  template: '<input class="demo__input" type="text" @keyup.enter="onCouponAppliedPromo" placeholder="Promo-code">',
+
+  methods: {
+    onCouponAppliedPromo() {
+      Event.fire('appliedPromo');
+    }
+  }
+});
+
+// var vm13 = new Vue({
+//   el: '#root-13',
+//
+//   data: {
+//     couponAppliedPromo: false
+//   },
+//
+//   created() {
+//     Event.listen('appliedPromo', () => alert('Hey'));
+//   }
+// });
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*  */

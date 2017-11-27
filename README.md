@@ -28,7 +28,7 @@
 
 :white_check_mark: 12 — Component Communication Example #1: Custom Events
 
-13 — Component Communication Example #2: Event Dispatcher
+:x: 13 — Component Communication Example #2: Event Dispatcher
 
 14 — Named Slots in a Nutshell
 
