@@ -30,7 +30,9 @@
 
 :x: 13 — Component Communication Example #2: Event Dispatcher
 
-14 — Named Slots in a Nutshell
+(вроде бы весь код по скринкасту, но не завелось :sob:)
+
+:white_check_mark: 14 — Named Slots in a Nutshell
 
 15 — Single-Use Components and Inline Templates
 

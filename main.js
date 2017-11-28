@@ -315,7 +315,7 @@ window.Event = new class {
   }
 }
 
-Vue.component('promocode', {
+Vue.component('promo-code', {
   template: '<input class="demo__input" type="text" @keyup.enter="onCouponAppliedPromo" placeholder="Promo-code">',
 
   methods: {
@@ -338,9 +338,38 @@ Vue.component('promocode', {
 // });
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
+/* Step 14 — Named Slots in a Nutshell */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+Vue.component('full-modal', {
+  template: `
+    <div class="modal is-active">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">
+            <slot name="header-content"></slot>
+          </p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <slot name="body-content"></slot>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-success">
+            <slot name="footer-first-button"></slot>
+          </button>
+          <button class="button">
+            <slot name="footer-second-button"></slot>
+          </button>
+        </footer>
+      </div>
+    </div>
+  `
+});
 
+var vm14 = new Vue({
+  el: '#root-14'
+});
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*  */
