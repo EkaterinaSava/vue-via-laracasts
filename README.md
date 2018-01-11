@@ -36,40 +36,42 @@
 
 :white_check_mark: 15 — Single-Use Components and Inline Templates
 
+
 Все остальное будет в другом репозитории / с вебпаком и наложницами  :new_moon_with_face:
 
-16 — Webpack and vue-cli
 
-17 — Hot Module Replacement
+~~16 — Webpack and vue-cli~~
 
-18 — Vue Ajax Requests With Axios
+~~17 — Hot Module Replacement~~
 
-19 — Object-Oriented Forms: Part 1
+~~18 — Vue Ajax Requests With Axios~~
 
-20 — Object-Oriented Forms: Part 2
+~~19 — Object-Oriented Forms: Part 1~~
 
-21 — Object-Oriented Forms: Part 3
+~~20 — Object-Oriented Forms: Part 2~~
 
-22 — Webpack Config From Scratch
+~~21 — Object-Oriented Forms: Part 3~~
 
-23 — This is Laravel Mix
+~~22 — Webpack Config From Scratch~~
 
-24 — Shared State 101
+~~23 — This is Laravel Mix~~
 
-25 — Custom Input Components
+~~24 — Shared State 101~~
 
-26 — Vue SPA Essentials: Routing
+~~25 — Custom Input Components~~
 
-27 — SPAs and the Backend
+~~26 — Vue SPA Essentials: Routing~~
 
-28 — Vue Filters
+~~27 — SPAs and the Backend~~
 
-29 — Dedicated Form Components
+~~28 — Vue Filters~~
 
-30 — Testing Vue: Part 1
+~~29 — Dedicated Form Components~~
 
-31 — Vue Component Responsibility
+~~30 — Testing Vue: Part 1~~
 
-32 — Vue Subclassing
+~~31 — Vue Component Responsibility~~
 
-33 — Scoped Slots
+~~32 — Vue Subclassing~~
+
+~~33 — Scoped Slots~~
