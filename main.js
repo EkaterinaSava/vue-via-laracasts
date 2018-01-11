@@ -378,13 +378,18 @@ var vm14 = new Vue({
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Step 15 — Single-Use Components and Inline Templates */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-Vue.component('', {
+Vue.component('progress-view', {
+
   data() {
     return {
-      completionRate: 0
+      completionRate: 25
     }
   }
 })
+
+var vm15 = new Vue({
+  el: '#root-15'
+});
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*  */

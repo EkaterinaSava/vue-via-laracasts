@@ -276,8 +276,16 @@
     <div id="root-15" class="demo">
       <h4 class="demo__heading">Step 15 — Single-Use Components and Inline Templates</h4>
 
-      <progress-view>
-        <h6 class="demo__subheading">Your Progress through this Course is {{ completionRate }}</h6>
+      <progress-view inline-template>
+        <div class="demo__flex-inner">
+          <p class="demo__paragraph">Your Progress through this Course is
+            <span class="demo__data">{{ completionRate }}</span>%
+          </p>
+          <div class="demo__invisible-separator"></div>
+          <p class="demo__paragraph">
+            <button class="button is-dark" @click="completionRate += 10">Update my rate / + 10%</button>
+          </p>
+        </div>
       </progress-view>
     </div>
 
