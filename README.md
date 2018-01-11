@@ -36,9 +36,11 @@
 
 :white_check_mark: 15 — Single-Use Components and Inline Templates
 
+:soon:
 
 Все остальное будет в другом репозитории / с вебпаком и наложницами  :new_moon_with_face:
 
+:soon:
 
 ~~16 — Webpack and vue-cli~~
 
