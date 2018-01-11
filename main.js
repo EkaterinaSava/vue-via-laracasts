@@ -349,7 +349,7 @@ Vue.component('full-modal', {
           <p class="modal-card-title">
             <slot name="header-content"></slot>
           </p>
-          <button class="delete" aria-label="close"></button>
+          <button class="delete" aria-label="close" @click="$emit('close')"></button>
         </header>
         <section class="modal-card-body">
           <slot name="body-content"></slot>
@@ -358,7 +358,7 @@ Vue.component('full-modal', {
           <button class="button is-success">
             <slot name="footer-first-button"></slot>
           </button>
-          <button class="button">
+          <button class="button" aria-label="close" @click="$emit('close')">
             <slot name="footer-second-button"></slot>
           </button>
         </footer>
@@ -368,13 +368,23 @@ Vue.component('full-modal', {
 });
 
 var vm14 = new Vue({
-  el: '#root-14'
+  el: '#root-14',
+
+  data: {
+    showModal: false
+  }
 });
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
+/* Step 15 — Single-Use Components and Inline Templates */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+Vue.component('', {
+  data() {
+    return {
+      completionRate: 0
+    }
+  }
+})
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*  */
