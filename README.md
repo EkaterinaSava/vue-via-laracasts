@@ -34,7 +34,9 @@
 
 :white_check_mark: 14 — Named Slots in a Nutshell
 
-15 — Single-Use Components and Inline Templates
+:white_check_mark: 15 — Single-Use Components and Inline Templates
+
+Все остальное будет в другом репозитории / с вебпаком и наложницами  :new_moon_with_face:
 
 16 — Webpack and vue-cli
 
