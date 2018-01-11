@@ -40,6 +40,8 @@
 
 **Все остальное будет в другом репозитории / с вебпаком и наложницами  :new_moon_with_face:**
 
+:heavy_multiplication_x: :heavy_multiplication_x: :heavy_multiplication_x:
+
 ~~16 — Webpack and vue-cli~~
 
 ~~17 — Hot Module Replacement~~
