@@ -55,6 +55,9 @@ h6 {
 .primary__heading {
   text-align: center;
 }
+.primary__under-heading {
+  text-align: center;
+}
 .demo {
   display: flex;
   align-items: center;
