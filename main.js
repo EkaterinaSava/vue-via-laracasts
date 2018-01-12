@@ -22,7 +22,7 @@ var vm3 = new Vue({
   mounted() {
     document.querySelector('#root-3-btn').addEventListener('click', () => {
       let newName = document.querySelector('#root-3-input');
-      vm2.names.push(newName.value);
+      vm3.names.push(newName.value);
       newName.value = '';
     });
   }
