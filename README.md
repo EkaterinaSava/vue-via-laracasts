@@ -38,7 +38,7 @@
 
 :heavy_multiplication_x: :heavy_multiplication_x: :heavy_multiplication_x:
 
-**Все остальное будет в (другом репозитории)[https://github.com/EkaterinaSava/vue-via-laracasts-2] / с вебпаком и наложницами  :new_moon_with_face:**
+**Все остальное будет в [другом репозитории](https://github.com/EkaterinaSava/vue-via-laracasts-2) / с вебпаком и наложницами  :new_moon_with_face:**
 
 :heavy_multiplication_x: :heavy_multiplication_x: :heavy_multiplication_x:
 
