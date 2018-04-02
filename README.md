@@ -1,6 +1,6 @@
 # Vue.js via Laracasts Tutorial
 
-❉ По скринкасту https://laracasts.com/series/learn-vue-2-step-by-step
+**❉ По скринкасту [Laracasts — Learn Vue 2: Step By Step](https://laracasts.com/series/learn-vue-2-step-by-step)**
 
 :octocat:
 
