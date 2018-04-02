@@ -30,7 +30,7 @@
 
 :x: 13 — Component Communication Example #2: Event Dispatcher
 
-(вроде бы весь код по скринкасту, но не завелось :sob:)
+(вроде бы весь код по скринкасту, алерт работает, но 2 ошибки в консоли :sob:)
 
 :white_check_mark: 14 — Named Slots in a Nutshell
 
@@ -38,7 +38,7 @@
 
 :heavy_multiplication_x: :heavy_multiplication_x: :heavy_multiplication_x:
 
-**Все остальное будет в другом репозитории / с вебпаком и наложницами  :new_moon_with_face:**
+**Все остальное будет в (другом репозитории)[https://github.com/EkaterinaSava/vue-via-laracasts-2] / с вебпаком и наложницами  :new_moon_with_face:**
 
 :heavy_multiplication_x: :heavy_multiplication_x: :heavy_multiplication_x:
 
