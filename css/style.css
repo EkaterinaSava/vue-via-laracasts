@@ -50,7 +50,7 @@ h6 {
 .primary__container {
   width: 80%;
   margin: auto;
-  padding: 10px 0 50px;
+  padding: 30px 0 100px;
 }
 .primary__heading {
   text-align: center;
@@ -123,6 +123,14 @@ h6 {
   line-height: 20px;
   margin: 5px 0;
 }
+.demo__paragraph-inner-text {
+  line-height: 36px;
+  margin: 0 5px;
+}
+.demo__paragraph + .demo__paragraph {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .demo__text {
   margin: 10px;
 }
@@ -143,7 +151,7 @@ h6 {
   height: 1px;
   border: 0;
   background-color: #CD88AF;
-  margin: 40px auto;
+  margin: 50px auto;
 }
 .demo__small-hr {
   width: 100%;

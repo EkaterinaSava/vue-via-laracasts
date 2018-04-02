@@ -316,26 +316,28 @@ window.Event = new class {
 }
 
 Vue.component('promo-code', {
-  template: '<input class="demo__input" type="text" @keyup.enter="onCouponAppliedPromo" placeholder="Promo-code">',
+  template: `
+    <input class="demo__input" type="text" @keyup.enter="onPromoApplied" placeholder="Promo-code">
+  `,
 
   methods: {
-    onCouponAppliedPromo() {
-      Event.fire('appliedPromo');
+    onPromoApplied() {
+      Event.fire('promoApplied');
     }
   }
 });
 
-// var vm13 = new Vue({
-//   el: '#root-13',
-//
-//   data: {
-//     couponAppliedPromo: false
-//   },
-//
-//   created() {
-//     Event.listen('appliedPromo', () => alert('Hey'));
-//   }
-// });
+var vm13 = new Vue({
+  el: '#root-13',
+
+  data: {
+    promoApplied: false
+  },
+
+  created() {
+    Event.listen('promoApplied', () => alert('Handling it!'));
+  }
+});
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Step 14 — Named Slots in a Nutshell */
@@ -344,16 +346,20 @@ Vue.component('full-modal', {
   template: `
     <div class="modal is-active">
       <div class="modal-background"></div>
+
       <div class="modal-card">
+
         <header class="modal-card-head">
           <p class="modal-card-title">
             <slot name="header-content"></slot>
           </p>
           <button class="delete" aria-label="close" @click="$emit('close')"></button>
         </header>
+
         <section class="modal-card-body">
           <slot name="body-content"></slot>
         </section>
+
         <footer class="modal-card-foot">
           <button class="button is-success">
             <slot name="footer-first-button"></slot>
@@ -362,6 +368,7 @@ Vue.component('full-modal', {
             <slot name="footer-second-button"></slot>
           </button>
         </footer>
+
       </div>
     </div>
   `
@@ -390,31 +397,6 @@ Vue.component('progress-view', {
 var vm15 = new Vue({
   el: '#root-15'
 });
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*  */
-/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*  */

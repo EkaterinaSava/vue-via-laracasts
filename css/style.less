@@ -9,6 +9,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -47,7 +48,7 @@ h6 {font-size: 14px;}
   &__container {
     width: 80%;
     margin: auto;
-    padding: 10px 0 50px;
+    padding: 30px 0 100px;
   }
 
   &__heading {
@@ -133,6 +134,16 @@ h6 {font-size: 14px;}
   &__paragraph {
     line-height: 20px;
     margin: 5px 0;
+
+    &-inner-text {
+      line-height: 36px;
+      margin: 0 5px;
+    }
+
+    & + & {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 
   &__text {
@@ -159,7 +170,7 @@ h6 {font-size: 14px;}
     height: 1px;
     border: 0;
     background-color: @superLightViolet;
-    margin: 40px auto;
+    margin: 50px auto;
   }
 
   &__small-hr {

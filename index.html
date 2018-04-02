@@ -38,7 +38,9 @@
 
       <div class="demo__invisible-separator"></div>
 
-      <p class="demo__paragraph">The value of the input is: <span class="demo__data">{{ message }}</span></p>
+      <p class="demo__paragraph">
+        The value of the input is: <span class="demo__data">{{ message }}</span>
+      </p>
     </div>
 
     <hr class="demo__hr">
@@ -63,12 +65,11 @@
       </ul>
 
       <div class="demo__invisible-separator"></div>
+      <span class="demo__small-text">(JS native event listener)</span>
+      <div class="demo__invisible-separator"></div>
 
       <input type="text" class="demo__input" id="root-3-input">
       <button class="demo__btn" id="root-3-btn">Add new name in List</button>
-
-      <div class="demo__invisible-separator"></div>
-      <span class="demo__small-text">(JS native event listener)</span>
     </div>
 
     <hr class="demo__hr">
@@ -83,12 +84,11 @@
       </ul>
 
       <div class="demo__invisible-separator"></div>
+      <span class="demo__small-text">(Vue event listener)</span>
+      <div class="demo__invisible-separator"></div>
 
       <input type="text" class="demo__input" v-model="newName">
       <button class="demo__btn" @click="addName">Add new name in List</button>
-
-      <div class="demo__invisible-separator"></div>
-      <span class="demo__small-text">(Vue event listener)</span>
     </div>
 
     <hr class="demo__hr">
@@ -173,7 +173,9 @@
       <h4 class="demo__heading">Step 09 — Practical Component Exercise #1: Message</h4>
 
       <message title="Hello, world!" body="Lorem ipsum dolor sit amet."></message>
+
       <div class="demo__invisible-separator"></div>
+
       <message title="Hello, universe!" body="Donec sodales, arcu et sollicitudin porttitor."></message>
 
     </div>
@@ -244,20 +246,17 @@
     <div id="root-13" class="demo">
       <h4 class="demo__heading">Step 13 — Component Communication Example #2: Event Dispatcher</h4>
 
-      <!-- <p class="demo__paragraph">
-        Enter your Promo Code and Press «Enter»&nbsp;
-        <promocode @appliedPromo="onCouponAppliedPromo"></promocode>
-      <p>
-      <div class="demo__invisible-separator"></div>
-
       <p class="demo__paragraph">
-        Enter yet another Promo Code and Press «Enter»&nbsp;
-        <promocode @appliedPromo="onCouponAppliedPromo"></promocode>
+        Enter your Promo Code and Press «Enter»&nbsp;
+        <promo-code @promoApplied="onPromoApplied"></promo-code>
       <p>
       <div class="demo__invisible-separator"></div>
 
-      <p class="demo__paragraph" v-if="couponAppliedPromo"><strong>Coupon was applied!</strong></p> -->
-      It's don't work and I comment all code :(
+      <span class="demo__small-text">
+        IDK why errors in console, code the same as in the lession :(
+        <br>
+        but alert is working...
+      </span>
     </div>
 
     <hr class="demo__hr">
@@ -288,21 +287,25 @@
 
       <progress-view inline-template>
         <div class="demo__flex-inner">
+
           <p class="demo__paragraph">Your Progress through this Course is
             <span class="demo__data">{{ completionRate }}</span>%
           </p>
+
           <div class="demo__invisible-separator"></div>
+
           <p class="demo__paragraph">
-            <button class="button is-dark" @click="completionRate += 10">Update my rate / + 10%</button>
+            <span class="demo__paragraph-inner-text"><b>Update my rate</b></span>
+            <button class="button is-info" @click="completionRate += 10">↑↑↑ + 10%</button>
           </p>
+          <p class="demo__paragraph">
+            <span class="demo__paragraph-inner-text"><b>Downgrade my rate</b></span>
+            <button class="button is-dark" @click="completionRate -= 10">↓↓↓ - 10%</button>
+          </p>
+
         </div>
       </progress-view>
     </div>
-
-    <hr class="demo__hr">
-    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
-    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
-    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––—— -->
 
   </main>
 
