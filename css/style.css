@@ -148,7 +148,7 @@ h6 {
 .demo__small-hr {
   width: 100%;
   border: 0;
-  position: relative;
+  background-color: transparent;
 }
 .demo__small-hr:after {
   display: block;
@@ -156,7 +156,8 @@ h6 {
   width: 35%;
   height: 1px;
   background-color: #CD88AF;
-  margin: 15px auto;
+  margin: 0 auto;
+  opacity: .5;
 }
 .demo__invisible-separator {
   width: 100%;
